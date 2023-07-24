@@ -5,11 +5,7 @@ const articleRouter = require('./routes/articles')
 const methodOverride = require('method-override')
 const app = express()
 
-// mongoose.connect('mongodb+srv://ayush:ayush@cluster0.zjbil2x.mongodb.net/?retryWrites=true&w=majority', {
-//   useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true
-// })
-
-mongoose.connect('mongodb+srv://ayush:ayush@cluster0.zjbil2x.mongodb.net/?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://ayush:<password>@cluster0.zjbil2x.mongodb.net/?retryWrites=true&w=majority')
 .then(() => console.log("Connected to MongoDB Database"))
 .catch((err) => console.log(err))
 
